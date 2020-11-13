@@ -1,3 +1,4 @@
 * 1307 hard 口算难题
 * 127 middle(近hard)  单词接龙
 * 514 hard 自由之路
+* 51 hard N皇后
