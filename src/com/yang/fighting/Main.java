@@ -9,11 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        LeetCode147 l = new LeetCode147();
-        ListNode node1 = new ListNode(3);
-        ListNode node2 = new ListNode(1, node1);
-        ListNode node3 = new ListNode(2, node2);
-        ListNode node4 = new ListNode(4, node3);
-        l.insertionSortList(node4);
+        LeetCode1370 l = new LeetCode1370();
+        System.out.println(l.sortString("aaaabbbbcccc"));
     }
 }
