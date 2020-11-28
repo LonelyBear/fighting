@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        LeetCode1370 l = new LeetCode1370();
-        System.out.println(l.sortString("aaaabbbbcccc"));
+        LeetCode493 l = new LeetCode493();
+        System.out.println(l.reversePairs(new int[]{1, 3, 2, 3, 1}));
     }
 }
