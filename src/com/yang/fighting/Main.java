@@ -9,7 +9,8 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        LeetCode493 l = new LeetCode493();
-        System.out.println(l.reversePairs(new int[]{1, 3, 2, 3, 1}));
+        LeetCode74 l = new LeetCode74();
+        int[][] matrix = new int[][]{{1},{3}};
+        System.out.println(l.searchMatrix(matrix , 3));
     }
 }

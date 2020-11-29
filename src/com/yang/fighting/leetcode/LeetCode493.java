@@ -1,9 +1,13 @@
 package com.yang.fighting.leetcode;
 
+import com.yang.fighting.base.BinaryIndexedTree;
+
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.TreeSet;
 
 /**
  * @author yangtao
@@ -86,5 +90,29 @@ public class LeetCode493 {
             rightIndex++;
         }
         System.arraycopy(tmp, left, nums, left, right - left + 1);
+    }
+
+    public int reversePairsByBinaryIndexedTree(int[] nums) {
+        TreeSet<Long> allNumbers = new TreeSet<Long>();
+        for (int x : nums) {
+            allNumbers.add((long) x);
+            allNumbers.add((long) x * 2);
+        }
+        // 利用哈希表进行离散化
+        Map<Long, Integer> values = new HashMap<Long, Integer>();
+        int idx = 0;
+        for (long x : allNumbers) {
+            values.put(x, idx);
+            idx++;
+        }
+
+        int ret = 0;
+        BinaryIndexedTree bit = new BinaryIndexedTree(values.size());
+        for (int num : nums) {
+            int left = values.get((long) num * 2), right = values.size() - 1;
+            ret += bit.query(right + 1) - bit.query(left + 1);
+            bit.update(values.get((long) num) + 1, 1);
+        }
+        return ret;
     }
 }
