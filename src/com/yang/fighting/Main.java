@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        LeetCode767 l = new LeetCode767();
-        System.out.println(l.reorganizeString("vvvlo"));
+        LeetCode321 l = new LeetCode321();
+        System.out.println(Arrays.toString(l.maxNumber(new int[]{3, 4, 6, 5}, new int[]{9, 1, 2, 5, 8, 3}, 5)));
     }
 }
