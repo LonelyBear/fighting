@@ -3,10 +3,23 @@ package com.yang.fighting;
 
 import com.yang.fighting.leetcode.*;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
-        LeetCode970 l = new LeetCode970();
-        System.out.println(l.powerfulIntegers(3, 5, 15));
+        LeetCode830 l = new LeetCode830();
+        Class clazz = l.getClass();
+        Object[] objects = clazz.getFields();
+        System.out.println(l.largeGroupPositions("abcdddeeeeaabbbcd"));
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("122121");
+            }
+        });
+        thread.start();
+
+        System.out.println(Arrays.toString(objects));
     }
 }
