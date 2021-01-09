@@ -1,4 +1,4 @@
-package com.yang.fighting;
+package com.yang.fighting.leetcode;
 
 /**
  * @author yangtao
