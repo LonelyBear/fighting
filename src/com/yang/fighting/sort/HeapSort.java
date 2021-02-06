@@ -9,6 +9,15 @@ import java.util.Arrays;
  * @description 堆排序
  */
 
+/**
+ *
+ * 堆排序的过程
+ * #  利用堆的数据结构特性: 子结点的键值和索引总是小于(或者大于)它的父结点
+ * 1. 将初始的数据建立大顶堆, 此时堆为初始的无序区
+ * 2. 将堆顶元素和最后一个元素交换, 得到新的无序区 (R1,R2,....,Rn-1)和有序区Rn, 对新的无序区调整为新堆,
+ * 3. 不断重复2的过程,直到有序区的元素为全部元素
+ *
+ */
 public class HeapSort {
 
     static int[] arr = {
@@ -36,6 +45,11 @@ public class HeapSort {
         }
     }
 
+    /**
+     * 构建堆的过程
+     * @param i
+     * @param len
+     */
     private static void sortHeap(int i, int len) {
         //定义左节点
         int left = 2 * i + 1;

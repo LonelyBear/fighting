@@ -11,7 +11,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
-        LeetCode628 l = new LeetCode628();
-        l.maximumProduct(new int[] {-1,-2,-3});
+        LeetCode888 l = new LeetCode888();
+        System.out.println(Arrays.toString(l.fairCandySwap(new int[]{1, 1}, new int[]{2, 2})));
     }
 }
