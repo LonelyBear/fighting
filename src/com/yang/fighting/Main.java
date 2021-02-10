@@ -1,12 +1,15 @@
 package com.yang.fighting;
 
 
-import com.yang.fighting.leetcode.LeetCode978;
+import com.yang.fighting.leetcode.*;
 
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
-        LeetCode978 l = new LeetCode978();
-        l.maxTurbulenceSize(new int[] {9, 9});
+        LeetCode567 l = new LeetCode567();
+        l.checkInclusion("ab", "eidboaoo");
+
+        //"ab"
+        //"eidboaoo"
     }
 }
