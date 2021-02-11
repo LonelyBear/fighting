@@ -10,7 +10,7 @@ import java.util.Comparator;
  * @description https://leetcode-cn.com/problems/matrix-cells-in-distance-order/
  */
 
-public class LC1030 {
+public class LeetCode1030 {
     public int[][] allCellsDistOrder(int R, int C, int r0, int c0) {
         if (R == 0 && C == 0) {
             return new int[0][0];
