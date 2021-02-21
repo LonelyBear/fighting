@@ -6,7 +6,7 @@ import com.yang.fighting.leetcode.*;
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
-        LeetCode485 l = new LeetCode485();
-        l.findMaxConsecutiveOnes(new int[]{1, 0, 1, 1, 0, 1});
+        LeetCode1438 l = new LeetCode1438();
+        l.longestSubarray(new int[]{8, 2, 4, 7}, 4);
     }
 }
