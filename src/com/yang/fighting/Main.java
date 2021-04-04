@@ -27,7 +27,7 @@ public class Main {
 //        System.out.println(iterator.hasNext()); // 返回 True
 //        System.out.println(iterator.next()); // 返回 20
 //        System.out.println(iterator.hasNext()); // 返回 False
-        LeetCode190 l = new LeetCode190();
-        System.out.println(l.reverseBits(2));
+        LeetCode781 l = new LeetCode781();
+        System.out.println(l.numRabbits(new int[]{2, 1, 2, 2, 2, 2, 2, 2, 1, 1}));
     }
 }
