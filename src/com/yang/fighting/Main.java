@@ -5,29 +5,13 @@ import com.yang.fighting.base.ListNode;
 import com.yang.fighting.base.TreeNode;
 import com.yang.fighting.leetcode.*;
 
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
+
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
-//        TreeNode root = new TreeNode(7);
-//        TreeNode node1 = new TreeNode(3);
-//        TreeNode node2 = new TreeNode(15);
-//        TreeNode node3 = new TreeNode(9);
-//        TreeNode node4 = new TreeNode(20);
-//        root.left = node1;
-//        root.right = node2;
-//        node2.left = node3;
-//        node2.right = node4;
-//        BSTIterator iterator = new BSTIterator(root);
-//        System.out.println(iterator.next()); // 返回 3
-//        System.out.println(iterator.next()); // 返回 7
-//        System.out.println(iterator.hasNext()); // 返回 True
-//        System.out.println(iterator.next()); // 返回 9
-//        System.out.println(iterator.hasNext()); // 返回 True
-//        System.out.println(iterator.next()); // 返回 15
-//        System.out.println(iterator.hasNext()); // 返回 True
-//        System.out.println(iterator.next()); // 返回 20
-//        System.out.println(iterator.hasNext()); // 返回 False
-        LeetCode781 l = new LeetCode781();
-        System.out.println(l.numRabbits(new int[]{2, 1, 2, 2, 2, 2, 2, 2, 1, 1}));
+        LeetCode81 l = new LeetCode81();
+        l.search(new int[]{2, 2, 2, 3, 2, 2, 2}, 3);
     }
 }
