@@ -11,7 +11,7 @@ import java.text.DecimalFormat;
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
-        LeetCode81 l = new LeetCode81();
-        l.search(new int[]{2, 2, 2, 3, 2, 2, 2}, 3);
+        LeetCode264 l = new LeetCode264();
+        l.nthUglyNumber(10);
     }
 }
