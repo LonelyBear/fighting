@@ -11,7 +11,10 @@ import java.text.DecimalFormat;
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
-        LeetCode264 l = new LeetCode264();
-        l.nthUglyNumber(10);
+//        LeetCode179 leetCode179 = new LeetCode179();
+//        leetCode179.largestNumber(new int[]{3, 30, 34, 5, 9});
+        Trie trie = new Trie();
+        trie.insert("apple");
+        System.out.println(trie.search("apple"));
     }
 }
