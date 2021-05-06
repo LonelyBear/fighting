@@ -15,9 +15,7 @@ import java.util.Collections;
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
-        LeetCode690 l = new LeetCode690();
-        l.getImportance(Arrays.asList(new Employee(1, 5, Arrays.asList(2, 3)),
-                new Employee(2, 3, Collections.emptyList()),
-                new Employee(3, 3, Collections.emptyList())), 1);
+        LeetCode1720 l = new LeetCode1720();
+        l.decode(new int[]{6, 2, 7, 3}, 4);
     }
 }
