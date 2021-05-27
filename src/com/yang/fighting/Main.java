@@ -15,8 +15,7 @@ import java.util.Collections;
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
-        LeetCode692 l = new LeetCode692();
-        l.topKFrequent(new String[] {"i", "love", "leetcode", "i", "love", "coding"},
-        2);
+        LeetCode461 l = new LeetCode461();
+        l.hammingDistance(1, 4);
     }
 }
