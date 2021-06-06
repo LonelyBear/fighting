@@ -8,7 +8,7 @@ import java.util.LinkedList;
  * @version 1.0
  * @date 2021/3/12 11:03
  * @description https://leetcode-cn.com/problems/verify-preorder-serialization-of-a-binary-tree/
- * 331. 验证二叉树的前序序列化
+ * 331. 验证  二叉树的前序序列化
  */
 
 public class LeetCode331 {
