@@ -39,5 +39,4 @@ public class LeetCode474 {
         }
         return res;
     }
-    }
 }

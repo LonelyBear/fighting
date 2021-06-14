@@ -15,7 +15,7 @@ import java.util.Collections;
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
-        LeetCode525 l = new LeetCode525();
-        l.findMaxLength(new int[] {0 , 0,0,1,1,1});
+        LeetCode43 l = new LeetCode43();
+        l.multiply("123", "456");
     }
 }
