@@ -11,11 +11,12 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
-        LeetCode43 l = new LeetCode43();
-        l.multiply("123", "456");
+        LeetCode1239 l = new LeetCode1239();
+        l.maxLength(Arrays.asList("un", "iq", "ue"));
     }
 }
