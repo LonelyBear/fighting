@@ -16,12 +16,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
-        LeetCode909 l = new LeetCode909();
-        int[][] b = new int[][]{{-1,1,2,-1},
-                {2,13,15,-1},
-                {-1,10,-1,-1},
-                {-1,6,2,8}};
-        // [[-1,1,2,-1],[2,13,15,-1],[-1,10,-1,-1],[-1,6,2,8]]
-        l.snakesAndLadders(b);
+        LeetCode168 l = new LeetCode168();
+        l.convertToTitle(701);
     }
 }
