@@ -4,7 +4,7 @@ package com.yang.fighting.leetcode;
  * @author yangtao
  * @version 1.0
  * @date 2021/11/8 22:55
- * @description
+ * @description https://leetcode-cn.com/problems/bulls-and-cows/ 299. 猜数字游戏
  */
 public class LeetCode299 {
     public String getHint(String secret, String guess) {
