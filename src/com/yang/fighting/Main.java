@@ -11,10 +11,9 @@ public class Main {
 
     public static void main(String[] args) throws SocketException {
         // write your code here
-        LeetCode890 l890 = new LeetCode890();
-        System.out.print(l890.findAndReplacePattern(new String[]{
-                "mee"
-        }, "abb"));
+        Interview0109 interview0109 = new Interview0109();
+        interview0109.isFlipedString("waterbottle",
+                "erbottlewat");
     }
 
 }
