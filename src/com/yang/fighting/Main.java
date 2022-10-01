@@ -11,9 +11,8 @@ public class Main {
 
     public static void main(String[] args) throws SocketException {
         // write your code here
-        Interview0109 interview0109 = new Interview0109();
-        interview0109.isFlipedString("waterbottle",
-                "erbottlewat");
+        LeetCode1694 proxy = new LeetCode1694();
+        System.out.print(proxy.reformatNumber("--17-5 229 35-39475 "));
     }
 
 }
