@@ -11,8 +11,8 @@ public class Main {
 
     public static void main(String[] args) throws SocketException {
         // write your code here
-        LeetCode1800 proxy = new LeetCode1800();
-        System.out.print(proxy.maxAscendingSum(new int[]{12, 17, 15, 13, 10, 11, 12}));
+        LeetCode940 proxy = new LeetCode940();
+        System.out.print(proxy.distinctSubseqII("adbae"));
     }
 
 }
