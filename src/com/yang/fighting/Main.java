@@ -11,8 +11,19 @@ public class Main {
 
     public static void main(String[] args) throws SocketException {
         // write your code here
-        LeetCode1700 proxy = new LeetCode1700();
-        System.out.print(proxy.countStudents(new int[]{1,1,1,0,0,1}, new int[]{1,0,0,0,1,1}));
+        LeetCode779 proxy = new LeetCode779();
+        System.out.print(proxy.kthGrammar(1, 1));
+        System.out.print("\n");
+        System.out.print(proxy.kthGrammar(2, 1));
+        System.out.print("\n");
+        System.out.print(proxy.kthGrammar(2, 2));
+        System.out.print("\n");
+        System.out.print(proxy.kthGrammar(3, 4));
+        System.out.print("\n");
+        System.out.print(proxy.kthGrammar(4, 6));
+        System.out.print("\n");
+        System.out.print(proxy.kthGrammar(5, 16));
+        System.out.print("\n");
     }
 
 }
