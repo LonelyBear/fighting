@@ -9,21 +9,18 @@ package com.yang.fighting.leetcode;
 
 public class LeetCode283 {
     public void moveZeroes(int[] nums) {
-        if (nums.length == 0) {
+        if (nums.length == 0 || nums.length == 1) {
             return;
         }
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] != 0) {
-                continue;
+        int left = 0, right = 0;
+        while (right < nums.length) {
+            if (nums[right] != 0) {
+                int tmp = nums[right];
+                nums[right] = nums[left];
+                nums[left] = tmp;
+                left++;
             }
-            for (int j = i + 1; j < nums.length; j++) {
-                if (nums[j] == 0) {
-                    continue;
-                }
-                nums[i] = nums[j];
-                nums[j] = 0;
-                break;
-            }
+            right++;
         }
     }
 }

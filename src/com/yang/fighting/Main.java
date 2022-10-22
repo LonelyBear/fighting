@@ -11,19 +11,13 @@ public class Main {
 
     public static void main(String[] args) throws SocketException {
         // write your code here
-        LeetCode779 proxy = new LeetCode779();
-        System.out.print(proxy.kthGrammar(1, 1));
-        System.out.print("\n");
-        System.out.print(proxy.kthGrammar(2, 1));
-        System.out.print("\n");
-        System.out.print(proxy.kthGrammar(2, 2));
-        System.out.print("\n");
-        System.out.print(proxy.kthGrammar(3, 4));
-        System.out.print("\n");
-        System.out.print(proxy.kthGrammar(4, 6));
-        System.out.print("\n");
-        System.out.print(proxy.kthGrammar(5, 16));
-        System.out.print("\n");
+        LeetCode543 proxy = new LeetCode543();
+        TreeNode root = new TreeNode();
+        root.val = 1;
+        TreeNode node1 = new TreeNode();
+        node1.val = 2;
+        root.left = node1;
+        proxy.diameterOfBinaryTree(root);
     }
 
 }
