@@ -11,13 +11,8 @@ public class Main {
 
     public static void main(String[] args) throws SocketException {
         // write your code here
-        LeetCode543 proxy = new LeetCode543();
-        TreeNode root = new TreeNode();
-        root.val = 1;
-        TreeNode node1 = new TreeNode();
-        node1.val = 2;
-        root.left = node1;
-        proxy.diameterOfBinaryTree(root);
+        LeetCode915 proxy = new LeetCode915();
+        proxy.partitionDisjoint(new int[]{5, 0, 3, 8, 6});
     }
 
 }
