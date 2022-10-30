@@ -11,8 +11,8 @@ public class Main {
 
     public static void main(String[] args) throws SocketException {
         // write your code here
-        LeetCode915 proxy = new LeetCode915();
-        proxy.partitionDisjoint(new int[]{5, 0, 3, 8, 6});
+        LeetCode784 proxy = new LeetCode784();
+        System.out.print(proxy.letterCasePermutation("3z4"));
     }
 
 }
