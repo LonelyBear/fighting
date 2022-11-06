@@ -6,58 +6,31 @@ import java.util.Arrays;
  * @author yangtao
  * @version 1.0
  * @date 2020/11/10 10:25
- * @description https://leetcode-cn.com/problems/next-permutation/
+ * @description https://leetcode-cn.com/problems/next-permutation/ 31. 下一个排列
  */
 
 public class LeetCode31 {
     public void nextPermutation(int[] nums) {
-        if (nums.length < 1) {
+        if (nums.length <= 1) {
             return;
         }
-        int left = 0, right = 0;
-        // 找到交换的数字
-        boolean first = true;
-        for (int i = nums.length - 1; i > 0; i--) {
-            int leftTmp = 0, rightTmp = 0;
-            for (int j = i - 1; j >=0 ; j--) {
-                if (nums[i] > nums[j]) {
-                    leftTmp = j;
-                    rightTmp = i;
-                    break;
-                }
+        int i = nums.length - 2;
+        // 找到第一个 升序的 i
+        while (i >= 0 && nums[i] >= nums[i + 1]) {
+            i--;
+        }
+        if (i >= 0) {
+            int j = nums.length - 1;
+            while (j >= 0 && nums[j] <= nums[i]) {
+                j--;
             }
-            if (first) {
-                if (leftTmp != rightTmp) {
-                    left = leftTmp;
-                    right = rightTmp;
-                    first = false;
-                }
-            } else {
-                if (leftTmp > left) {
-                    left = leftTmp;
-                    right = rightTmp;
-                } else if (leftTmp == left && nums[rightTmp] <= nums[right] ) {
-                    right = rightTmp;
-                }
-            }
+            // 找到右边区间比i第一个大的数进行交换
+            int tmp = nums[j];
+            nums[j] = nums[i];
+            nums[i] = tmp;
         }
-        // left == right 说明没找到,则直接顺序排序
-        if (left == right) {
-            Arrays.sort(nums);
-            return;
-        }
-
-        // [0, left - 1] 不动
-        // nums[left] swap nums[right]
-        // [left + 1, nums.length - 1] sort
-        int num = nums[left];
-        nums[left] = nums[right];
-        nums[right] = num;
-        int[] tmp = Arrays.copyOfRange(nums, left + 1, nums.length);
-        Arrays.sort(tmp);
-        for (int i = 0; i < tmp.length; i++) {
-            nums[left + 1 + i] = tmp[i];
-        }
-         System.out.println(Arrays.toString(nums));
+        // 对后续交换的数组进行排序
+        Arrays.sort(nums, i + 1, nums.length);
     }
+
 }
