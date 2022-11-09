@@ -12,10 +12,9 @@ public class Main {
 
     public static void main(String[] args) throws SocketException {
         // write your code here
-        LeetCode31 proxy = new LeetCode31();
-        int[] nums = new int[]{1, 2, 3};
-        proxy.nextPermutation(nums);
-        System.out.print(Arrays.toString(nums));
-    }
+        LeetCode764 proxy = new LeetCode764();
+        System.out.print(proxy.orderOfLargestPlusSign(5, new int[][]{{4, 2}}));
 
+
+    }
 }
