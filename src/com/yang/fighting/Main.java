@@ -12,8 +12,8 @@ public class Main {
 
     public static void main(String[] args) throws SocketException {
         // write your code here
-        LeetCode764 proxy = new LeetCode764();
-        System.out.print(proxy.orderOfLargestPlusSign(5, new int[][]{{4, 2}}));
+        LeetCode790 proxy = new LeetCode790();
+        System.out.print(proxy.numTilings(3));
 
 
     }
