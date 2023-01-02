@@ -12,8 +12,20 @@ public class Main {
 
     public static void main(String[] args) throws SocketException {
         // write your code here
-        LeetCode1945 proxy = new LeetCode1945();
-        System.out.print(proxy.getLucky("leetcode", 2));
+        LeetCode1801 proxy = new LeetCode1801();
+        // [[26,7,0],[16,1,1],[14,20,0],[23,15,1],[24,26,0],[19,4,1],[1,1,0]]
+        System.out.print(proxy.getNumberOfBacklogOrders(
+                        new int[][]{
+                                new int[]{26, 7, 0},
+                                new int[]{16, 1, 1},
+                                new int[]{14, 20, 0},
+                                new int[]{23, 15, 1},
+                                new int[]{24, 26, 0},
+                                new int[]{19, 4, 1},
+                                new int[]{1, 1, 0}
+                        }
+                )
+        );
 
     }
 }
