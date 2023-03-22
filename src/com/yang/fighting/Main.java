@@ -12,8 +12,7 @@ public class Main {
 
     public static void main(String[] args) throws SocketException {
 //        // write your code here
-        LeetCode1138 obj = new LeetCode1138();
-        System.out.println(obj.alphabetBoardPath("leet"));
-        System.out.println(obj.alphabetBoardPath("code"));
+        Leetcode64 code = new Leetcode64();
+        System.out.println(code.minPathSum(new int[][] {new int[] {1,2,3}, new int[]{4,5,6}}));
     }
 }
