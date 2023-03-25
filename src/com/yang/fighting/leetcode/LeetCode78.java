@@ -14,19 +14,25 @@ import java.util.List;
 public class LeetCode78 {
 
     public List<List<Integer>> subsets(int[] nums) {
-        int len = nums.length;
-        List<List<Integer>> res = new ArrayList<>();
-        res.add(Collections.emptyList());
-        for (int i = 1; i <= len; i++) {
-            for (int j = 0; j < len - i; j++) {
+        List<List<Integer>> result = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
+        dfs(result, list, nums, 0);
+        return result;
+    }
 
-            }
-            dfs(nums, 0, i);
+    private void dfs(List<List<Integer>> result,
+                     List<Integer> list,
+                     int[] nums,
+                     int index) {
+        if (index == nums.length) {
+            result.add(new ArrayList<>(list));
+            return;
         }
-        return null;
+        list.add(nums[index]);
+        dfs(result, list, nums, index + 1);
+        list.remove(list.size() - 1);
+        dfs(result, list, nums, index + 1);
     }
 
-    private void dfs(int[] nums, int cur, int count) {
 
-    }
 }

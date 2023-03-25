@@ -12,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) throws SocketException {
 //        // write your code here
-        Leetcode64 code = new Leetcode64();
-        System.out.println(code.minPathSum(new int[][] {new int[] {1,2,3}, new int[]{4,5,6}}));
+        LeetCode78 code = new LeetCode78();
+        System.out.println(code.subsets(new int[] {1, 2, 3}));
     }
 }
