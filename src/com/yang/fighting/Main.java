@@ -12,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) throws SocketException {
 //        // write your code here
-        LeetCode78 code = new LeetCode78();
-        System.out.println(code.subsets(new int[] {1, 2, 3}));
+        LeetCode1039 code = new LeetCode1039();
+        System.out.println(code.minScoreTriangulation(new int[] {1,3,1,4,1,5}));
     }
 }
