@@ -13,8 +13,7 @@ public class Main {
 
     public static void main(String[] args) throws SocketException {
 //        // write your code here
-        LeetCode128 code = new LeetCode128();
-        code.longestConsecutive(new int[]{0,3,7,2,5,8,4,6,0,1});
-        // System.out.println(Arrays.toString(code.smallestSufficientTeam(req_skills, people)));
+        LeetCode2409 code = new LeetCode2409();
+        System.out.println(code.countDaysTogether("08-15", "08-18", "08-16", "08-19"));
     }
 }
