@@ -13,7 +13,7 @@ public class Main {
 
     public static void main(String[] args) throws SocketException {
 //        // write your code here
-        LeetCode2409 code = new LeetCode2409();
-        System.out.println(code.countDaysTogether("08-15", "08-18", "08-16", "08-19"));
+        LeetCode2423 code = new LeetCode2423();
+        System.out.println(code.equalFrequency("abcc"));
     }
 }
